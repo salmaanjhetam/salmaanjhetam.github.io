@@ -9,6 +9,7 @@ c.fillStyle = "blue";
 var rectX = 50;
 var rectY = 50;
 var rectSpeedX = 5;
+var rectSpeedY = 5;
 const xSpeed = 5;
 function animate() {
   requestAnimationFrame(animate);
@@ -20,7 +21,13 @@ function animate() {
   else if(rectX <= 0)
     rectSpeedX = xSpeed;
 
+  if(rectY+50 >= window.innerHeight)
+    rectSpeedY = -1*xSpeed;
+  else if(rectY <= 0)
+    rectSpeedY = xSpeed;
+
   rectX += rectSpeedX;
+  rectY += rectSpeedY;
 }
 
 animate();
