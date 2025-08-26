@@ -11,6 +11,7 @@ var rectY = 50;
 var rectSpeedX = 2;
 function animate() {
   requestAnimationFrame(animate);
+  c.clearRect(0, 0, innerWidth, innerHeight);
   c.fillRect(rectX, rectY, 50, 50);
   
   if(rectX+50 >= window.innerWidth)
