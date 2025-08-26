@@ -20,3 +20,5 @@ function animate() {
 
   rectX += rectSpeedX;
 }
+
+animate();
