@@ -8,16 +8,17 @@ c.fillStyle = "blue";
 
 var rectX = 50;
 var rectY = 50;
-var rectSpeedX = 2;
+var rectSpeedX = 5;
+const xSpeed = 5;
 function animate() {
   requestAnimationFrame(animate);
   c.clearRect(0, 0, innerWidth, innerHeight);
   c.fillRect(rectX, rectY, 50, 50);
   
   if(rectX+50 >= window.innerWidth)
-    rectSpeedX = -2;
+    rectSpeedX = -1*xSpeed;
   else if(rectX <= 0)
-    rectSpeedX = 2;
+    rectSpeedX = xSpeed;
 
   rectX += rectSpeedX;
 }
