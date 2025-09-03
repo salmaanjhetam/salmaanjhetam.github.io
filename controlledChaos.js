@@ -21,7 +21,7 @@ c.fillStyle = "blue";
 function Circle(n, p) {
     var circleX = n;
     var circleY = p;
-    var circleSpeed = 4;
+    var circleSpeed = 2;
     var circleDX = circleSpeed;
     var circleDY = circleSpeed;
     var circleRadius = 30;
